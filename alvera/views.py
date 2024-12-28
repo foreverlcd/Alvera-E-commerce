@@ -1,11 +1,11 @@
 from django.shortcuts import render
-# ----------------------------------------------
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import get_object_or_404, render, redirect
-# from .forms import CreateNewTask, CreateNewProject
-# ----------------------------------------------
-
+from store.models import Product
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    products = Product.objects.all().filter(is_available=True)
+    context = {
+        'products': products,
+    }
+
+    return render(request, 'home.html', context)

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'alvera',
     'category',
+    'store',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +127,9 @@ STATICFILES_DIRS = [
     'alvera/static',
 ]
 
+# media files comfiguration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

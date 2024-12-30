@@ -141,7 +141,7 @@
       <main class="col-md-9">
         <header class="border-bottom mb-4 pb-3">
           <div class="form-inline">
-            <span class="mr-md-auto"><b> {{ products_count }} </b> Items found </span>
+            <span class="mr-md-auto"><b>{{ product_count }}</b> items found </span>
           </div>
         </header>
         <!-- sect-heading -->
@@ -161,9 +161,7 @@
               <!-- img-wrap.// -->
               <figcaption class="info-wrap">
                 <div class="fix-height">
-                  <a href="./product-detail.html" class="title"
-                    >{{ product.product_name }}</a
-                  >
+                  <a href="./product-detail.html" class="title">{{ product.product_name }}</a>
                   <div class="price-wrap mt-2">
                     <span class="price">${{ product.price }}</span>
                     <!-- IMPORTANTE <del class="price-old">${{ product.price }}</del> -->

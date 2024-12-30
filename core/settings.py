@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'alvera',
     'category',
     'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
